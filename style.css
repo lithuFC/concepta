@@ -1,0 +1,69 @@
+body{
+    background: rgb(68, 0, 169);
+    min-height: 100dvh;
+    min-width: 100dvw;
+    overflow-x: hidden;
+}
+.top-container{
+    width: 100dvw;
+    height: 89dvh;
+    display: grid;
+    grid-template-columns: 60dvw auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content h1{
+    color: coral;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#centerLogo{
+    width: 30dvw;
+    animation-name: imgAni;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes imgAni {
+    from{
+        transform: translateY(-1rem) rotate(-5deg);
+    }
+    to{
+        transform: translateY(1rem);
+    }
+}
+h3{
+    text-align: center;
+    margin: 2rem 1rem;
+    letter-spacing: 1px;
+    color: pink;
+    font-size: 1.3rem;
+}
+.cont-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-links a{
+    padding: .8rem;
+    border: 2px solid lightcoral;
+    border-radius: 1.5rem;
+    color: aliceblue;
+    font-size: 1.4rem;
+    transition: all 1s;
+    text-decoration: none;
+}
+.cont-links a:hover{
+    background: pink;
+    color: blue;
+}
