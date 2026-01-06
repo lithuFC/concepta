@@ -37,9 +37,14 @@ h3{
     border-radius: 1.5rem;
     color: pink;
     cursor: pointer;
-    transition: all 1s;
+    transition: all .6s;
 }
 .btn:hover{
     background: pink;
     color: blue;
+}
+.cont-links{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
 }

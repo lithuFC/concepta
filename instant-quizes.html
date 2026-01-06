@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Quizzes</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" href="Assets/Images/quizzle-logo-2-bgless.png">
+    <link rel="stylesheet" href="instant-quizes.css">
+    <script src="https://kit.fontawesome.com/dc4390d531.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="gradient-sphere circle-1"></div>
+    <div class="gradient-sphere circle-2"></div>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img class="h-logo" src="Assets/Images/quizzle-logo-2-bgless.png" alt="Logo"></a>
+            <span>Quizzle</span>
+        </div>
+        <div class="tab-container">
+            <a href="index.html" class="head-link">Home</a>
+            <a href="about-us.html" class="head-link">About US</a>
+            <a href="contact.html" class="head-link">Contact US</a>
+        </div>
+        <div class="login-container">
+            <a id='dynBtn' href="login-page.html">LogIN / SignUP</a>
+        </div>
+    </header>
+    <hr>
+    <div id="topContainer" class="top-container">
+        <img id="quizGif" src="Assets/Images/quiz.gif" alt="quiz">
+        <div id="instantQuizes" class="cont">
+            <h1>Instant Quizzes</h1>
+            <p id="para">Start a quiz the moment you choose a topic. No login, no registration—just quick questions, instant feedback, and a smooth learning experience designed for fast practice and easy revision.</p>
+            <div class="opt-cont">
+                <div onclick="select(event)" class="opt" id="html">HTML</div>
+                <div onclick="select(event)" class="opt" id="css">CSS</div>
+                <div onclick="select(event)" class="opt" id="js">JS</div>
+                <div onclick="select(event)" class="opt" id="python">PYTHON</div>
+            </div>
+            <div class="new-comb">
+                <i class="fa-brands fa-searchengin"></i>
+                <input id="customTopic" placeholder="Search your Custom Topic..." type="text">
+            </div>
+            <div id="srchTpc" class="opt" onclick="searchTopic(event)">Search</div>
+        </div>
+    </div>
+    <div id="Quizzer" class="quizzer" style="display: none;">
+        <div class="time-ques">
+            <div id="timer">0</div>
+        </div>
+        <div class="quest-ans">
+            <div id="qno">1</div>
+            <div id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magni necessitatibus at a quos quam quibusdam accusantium odit nihil mollitia corporis itaque, architecto recusandae? Reprehenderit quis fugiat dolor tempora et.</div>
+        </div>
+        <div class="options-cont">
+            <div onclick="clicked(event)" class="optio" id="A">balh</div>
+            <div onclick="clicked(event)" class="optio" id="B">balh</div>
+            <div onclick="clicked(event)" class="optio" id="C">balh</div>
+            <div onclick="clicked(event)" class="optio" id="D">balh</div>
+        </div>
+        <div id="hint">Hint</div>
+    </div>
+    <div id="resulter" class="resulter" style="display: none;">
+        <h1>Quiz Results</h1>
+        <div id="scored">10/10</div>
+        <div class="com-qno">
+            <div id="qn">Questions Given</div>
+            <div id="gnQs">10</div>
+            <div id="qn">Correct Answers</div>
+            <div id="correctNo">10</div>
+            <div id="qn">Wrong Answers</div>
+            <div id="wrongNo">0</div>
+            <div id="qn">Ignored Questions</div>
+            <div id="ignored">0</div>
+        </div>
+        <div class="combi" style="display: flex;">
+            <div id="viewBtn" onclick="displaySolution()">View Solutions</div>
+            <div id="viewBtn" onclick="redirect()">Exit</div>
+        </div>
+    </div>
+    <div id="ansCont" style="display: none;">
+        <h1>Quiz Solutions</h1>
+        <div id="QComb">
+            <div id="Qnumber">1</div>
+            <div id="Aquestion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti repellendus? Voluptate, sed? Blanditiis illum iure distinctio provident aliquam esse?</div>
+        </div>
+        <div id="Aanswer">
+            <div id="AA">opt</div>
+            <div id="AB">opt</div>
+            <div id="AC">opt</div>
+            <div id="AD">opt</div>
+        </div>
+    </div>
+    <script type="module" src="instant-quizes.js"></script>
+    <script src="general.js"></script>
+</body>
+</html>

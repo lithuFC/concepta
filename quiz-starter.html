@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Quizzes</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" href="Assets/Images/quizzle-logo-2-bgless.png">
+    <link rel="stylesheet" href="quiz-starter.css">
+    <script src="https://kit.fontawesome.com/dc4390d531.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img id="headLogo" onclick="redir('index.html')" src="Assets/Images/concepta-logo.png" alt="">
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="">Topic</a>
+            <a href="">SignUP</a>
+            <a href="">LogIn</a>
+        </div>
+    </header>
+    <hr>
+    <div id="topContainer" class="top-container">
+        <div id="instantQuizes" class="cont">
+            <h1>Fetching Your Quiz</h1>
+            <p id="para">Loading...</p>
+            <p id="para">Don't press any key so that the quiz loads completely !</p>
+        </div>
+    </div>
+    <div id="Quizzer" class="quizzer" style="display: none;">
+        <div class="quest-ans">
+            <div id="qno">1</div>
+            <div id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magni necessitatibus at a quos quam quibusdam accusantium odit nihil mollitia corporis itaque, architecto recusandae? Reprehenderit quis fugiat dolor tempora et.</div>
+        </div>
+        <div class="options-cont">
+            <div onclick="clicked(event)" class="optio" id="A">balh</div>
+            <div onclick="clicked(event)" class="optio" id="B">balh</div>
+            <div onclick="clicked(event)" class="optio" id="C">balh</div>
+            <div onclick="clicked(event)" class="optio" id="D">balh</div>
+        </div>
+        <div id="hint">Hint</div>
+        <div class="nav-buttons">
+            <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            <button id="submitBtn" style="display: none;" onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </div>
+    <div id="resulter" class="resulter" style="display: none;">
+        <h1>Quiz Results</h1>
+        <div id="scored">10/10</div>
+        <div class="com-qno">
+            <div id="qn">Questions Given</div>
+            <div id="gnQs">10</div>
+            <div id="qn">Correct Answers</div>
+            <div id="correctNo">10</div>
+            <div id="qn">Wrong Answers</div>
+            <div id="wrongNo">0</div>
+            <div id="qn">Ignored Questions</div>
+            <div id="ignored">0</div>
+        </div>
+        <div class="combi" style="display: flex;">
+            <div id="viewBtn" onclick="displaySolution()">View Solutions</div>
+            <div id="viewBtn" onclick="redirect()">Exit</div>
+        </div>
+    </div>
+    <div id="ansCont" style="display: none;">
+        <h1>Quiz Solutions</h1>
+        <div id="QComb">
+            <div id="Qnumber">1</div>
+            <div id="Aquestion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti repellendus? Voluptate, sed? Blanditiis illum iure distinctio provident aliquam esse?</div>
+        </div>
+        <div id="Aanswer">
+            <div id="AA">opt</div>
+            <div id="AB">opt</div>
+            <div id="AC">opt</div>
+            <div id="AD">opt</div>
+        </div>
+    </div>
+    <script type="module" src="quiz-starter.js"></script>
+</body>
+</html>

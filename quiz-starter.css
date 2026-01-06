@@ -1,0 +1,332 @@
+body{
+    background: rgb(68, 0, 169);
+    min-height: 100dvh;
+    min-width: 100dvw;
+    overflow-x: hidden;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2.4rem;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    margin-left: 3rem;
+    animation-name: appearCont;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes appearCont {
+    from{
+        transform: scale(0);
+        background-color: #031149;
+    }
+}
+h1{
+    text-align: center;
+    color: aqua;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.cont p{
+    color: orange;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.opt{
+    padding: .5rem;
+    background: #223;
+    border: 1px solid aquamarine;
+    margin: .7rem;
+    width: 6.2dvw;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2rem;
+    color: aquamarine;
+    transition: all 1.4s;
+    align-self: center;
+}
+.opt-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50dvw;
+    place-items: center;
+}
+.opt:hover{
+    border: none;
+    box-shadow: 0 0 150px aqua;
+}
+#quizGif{
+    width: 35dvw;
+    border-radius: 50%;
+    margin: 2rem;
+    margin-left: 3rem;
+    animation-name: imagApr;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes imagApr {
+    from{
+        transform: scale(0) rotate(90deg) translateX(500px);
+    }
+}
+.top-container{
+    width: 100dvw;
+    height: 82dvh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.quizzer{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.time-ques{
+    margin-top: 1rem;
+    width: 85dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quest-ans{
+    margin-top: 1.5rem;
+    width: 88dvw;
+    display: grid;
+    grid-template-columns: 2.4rem auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+#qno, #Qnumber{
+    background-color: aqua;
+    padding: .6rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 800;
+    width: 2.4rem;
+    font-size: 1.6rem;
+}
+#question{
+    text-align: center;
+    display: inline-block;
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    color: orange;
+}
+.time-ques #timer{
+    background: lightgreen;
+    padding: .6rem;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.8rem;
+    width: 2.4rem;
+    margin-bottom: 1rem
+}
+.optio{
+    padding: .7rem;
+    margin: .4rem;
+    background: lightblue;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 1.6rem;
+    font-weight: 900;
+    font-size: 1.4rem;
+    min-width: 6rem;
+    text-align: center;
+    display: flex;
+    place-items: center;
+}
+.options-cont{
+    margin-top: 2.4rem;
+    display: grid;
+    width: 84dvw;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+#hint{
+    width: fit-content;
+    padding: .5rem;
+    padding-left: .8rem;
+    padding-left: .8rem;
+    border-radius: 1rem;
+    background: aquamarine;
+    margin-top: 3rem;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.resulter, #ansCont{
+    width: 85dvw;
+    border-radius: 2rem;
+    margin: 1.4rem auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(100px);
+    border-radius: 2rem;
+    box-shadow: 0 0 8px lightblue;
+    border: .5px solid #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#scored{
+    padding: 1.4rem;
+    font-size: 2.4rem;
+    letter-spacing: 3.4px;
+    font-weight: 900;
+    background: #031149;
+    border-radius: 50%;
+    color: greenyellow;
+    border: 1px solid aquamarine;
+}
+.com-qno{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    background: #031149;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 50dvw;
+    border: 2px solid aquamarine;
+    color: aquamarine;
+    font-size: 1.4rem;
+    font-family: 600;
+}
+#viewBtn{
+    padding: .9rem;
+    font-size: 1.5rem;
+    background: #031149;
+    border-radius: 2rem;
+    border: 2px solid purple;
+    color: violet;
+    transition: all 1.3s;
+    cursor: pointer;
+}
+#viewBtn:hover{
+    box-shadow: 0 0 150px purple;
+    border: none;
+    color: purple;
+}
+#Aquestion{
+    color: coral;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    margin: .5rem;
+}
+#Aanswer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60dvw;
+    gap: 1.4rem;
+    place-items: center;
+    margin: .5rem;
+}
+#Aanswer div{
+    background: blue;
+    padding: .7rem;
+    font-size: 1.3rem;
+    color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 1.7rem;
+    min-width: 10dvw;
+    text-align: center;
+}
+#QComb{
+    display: grid;
+    grid-template-columns: 5dvw auto;
+    place-items: center;
+    align-self: flex-start;
+    margin-top: 2rem;
+}
+.combi{
+    display: flex;
+    width: 35dvw;
+    justify-content: space-around;
+}
+.explore-btn{
+    margin: 2rem;
+    margin-top: 3rem;
+    padding: .8rem;
+    box-shadow: 1px 1px 50px purple;
+    font-size: 1.5rem;
+    background-color: purple;
+    color: pink;
+    border-radius: 1.1rem;
+    transition: both 1s;
+    animation-name: btnAppear;
+    animation-duration: 1.8s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    transition: all 1s;
+    animation-fill-mode: forwards;
+    border: .1px solid pink;
+    cursor: pointer;
+}
+.new-comb{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+i{
+    border: 2px solid aquamarine;
+    padding: .5rem;
+    border-radius: 50%;
+    color: aqua;
+    background: #031149;
+    font-size: 2rem;
+}
+#customTopic{
+    width: 25dvw;
+    padding: .8rem;
+    border-radius: 2rem;
+    background: #031149;
+    border: 2px solid aquamarine;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    color: wheat;
+}
+#customTopic::placeholder{
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+}
+.explore-btn:hover{
+    color: purple;
+    background: pink;
+    box-shadow: 1px 1px 20px violet;
+}
+.nav-buttons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 90dvw;
+    gap: 2rem;
+}
+.nav-buttons button{
+    padding: .8rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 1.5rem;
+    color: blue;
+    background: aqua;
+    cursor: pointer;
+    transition: all .6s;
+    margin-bottom: 3rem;
+}
+.nav-buttons button:hover{
+    background: purple;
+    color: aqua;
+}
